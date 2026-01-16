@@ -3,7 +3,7 @@
 :root {
   --dark:#111111 ;
   --dark-alternate: #1B1918;
-  --primary: #FF5F3F;
+  --primary:#FF5F3F;
   --primary-light:#F4EBEB ;
 }
 
@@ -15,7 +15,7 @@
   --font-poppins: var(--font-poppins);
 }
 
-* {
+*{
   font-family: var(--font-poppins);
 }
 

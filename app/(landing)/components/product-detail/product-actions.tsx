@@ -44,7 +44,7 @@ const ProductActions = ({product, stock}: TProductActionsProps) => {
                     </button>
                 </div>
             </div>
-            <Button className="px-20 w-full">
+            <Button className="px-20 w-full" onClick={handleAddtoCart}>
                 <FiShoppingBag size={24}/>
                 Add to Card
             </Button>

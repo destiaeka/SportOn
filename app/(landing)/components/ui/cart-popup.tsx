@@ -7,30 +7,6 @@ import { useRouter } from "next/navigation";
 import { useCartStore } from "@/app/hooks/use-cart-store";
 import { getImageUrl } from "@/app/lib/api";
 
-export const cartList = [
-    {
-        name : "SportOn Product 1",
-        category : "Running",
-        price : 450000,
-        qty: 1,
-        imgUrl : "product-1.svg"
-    },
-    {
-        name : "SportOn Product 2",
-        category : "Running",
-        price : 500000,
-        qty: 2,
-        imgUrl : "product-2.svg"
-    },
-    {
-        name : "SportOn Product 3",
-        category : "Running",
-        price : 300000,
-        qty: 5,
-        imgUrl : "product-3.svg"
-    },
-]
-
 const CartPopup = () => {
     const {push} = useRouter();
     const {items, removeItem} = useCartStore();
@@ -51,7 +27,7 @@ const CartPopup = () => {
             </div>
             <div>
                 {items.length ? items.map((item, index) => (
-                    <div className="border-b border-gray-200 p-4 flex gap-3" key={index}>
+                    <div className="border-b border-gray-200 p-4 flex gap-3 " key={index}>
                         <div className="bg-primary-light aspect-square w-16 flex justify-center items-center">
                             <Image 
                                 src={getImageUrl(item.imageUrl)} 
